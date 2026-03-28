@@ -27,3 +27,96 @@ a {
     @apply py-16 md:py-20 lg:py-24;
   }
 }
+/* @keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.6s ease;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.6s ease;
+}
+
+@keyframes ctaNudge {
+  0%,
+  78%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 14px 30px rgba(244, 123, 32, 0.22);
+  }
+
+  82% {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 18px 36px rgba(244, 123, 32, 0.28);
+  }
+
+  86% {
+    transform: translateY(0) scale(1);
+  }
+
+  90% {
+    transform: translateY(-1px) scale(1.005);
+  }
+
+  94% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-cta-nudge {
+  animation: ctaNudge 1.6s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.animate-cta-nudge:hover,
+.animate-cta-nudge:focus-visible,
+.animate-cta-nudge:active {
+  animation-play-state: paused;
+}
