@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
+import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -8,12 +9,26 @@ export default function Footer() {
     <footer className="bg-slate-950 text-slate-300">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
-          <div className="text-2xl font-extrabold tracking-tight">
-            <span className="text-[#F47B20]">Transco</span>
-            <span className="text-[#2F6DB3]">Cargo</span>
+          <div>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/logo/logo.webp" // 👈 your logo path
+                alt="TranscoCargo Logo"
+                width={180}
+                height={50}
+                className="h-auto w-[160px]"
+                priority
+              />
+            </Link>
+
+            <p className="mt-4 max-w-sm leading-7 text-slate-400">
+              Professional logistics solutions designed to keep your cargo
+              moving safely, quickly, and efficiently.
+            </p>
           </div>
           <p className="mt-4 max-w-sm leading-7 text-slate-400">
-            Professional logistics solutions designed to keep your cargo moving safely, quickly, and efficiently.
+            Professional logistics solutions designed to keep your cargo moving
+            safely, quickly, and efficiently.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import AboutMissionVisionSection from "@/components/sections/AboutMissionVisionSection";
 import WorkTogether from "@/components/sections/WorkTogether";
-
+import Image from "next/image";
 import {
   CheckCircle2,
   ArrowRight,
@@ -55,18 +55,32 @@ const highlights = [
 export default function AboutPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(47,109,179,0.12),_transparent_30%),linear-gradient(135deg,#f8fbff,#ffffff)]">
-        <div className="container-page py-16 md:py-20">
+      <section className="relative overflow-hidden bg-slate-950">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero/about.webp"
+            alt="TranscoCargo Team"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,0.88)_0%,rgba(15,23,42,0.82)_35%,rgba(15,23,42,0.58)_65%,rgba(15,23,42,0.55)_100%)]" />
+
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,123,32,0.18),transparent_25%)]" />
+        </div>
+
+        <div className="relative z-10 container-page py-28 md:py-36 lg:py-44">
           <div className="max-w-3xl">
-            <div className="text-sm font-bold uppercase tracking-[0.25em] text-[#F47B20]">
+            <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-bold uppercase tracking-[0.25em] text-[#F47B20] backdrop-blur-sm">
               About Us
             </div>
 
-            <h1 className="mt-4 text-4xl font-black tracking-tight text-slate-900 md:text-6xl">
+            <h1 className="mt-6 text-4xl font-black tracking-tight text-white md:text-6xl">
               Delivering Confidence Across Every Mile
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
               TranscoCargo is a modern logistics company focused on reliable
               cargo solutions, better customer experience, and strong
               operational support for businesses and individuals.
@@ -161,8 +175,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    
-      <AboutMissionVisionSection /> 
+
+      <AboutMissionVisionSection />
 
       <section className="section-space bg-slate-50">
         <div className="container-page">
@@ -201,7 +215,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <WorkTogether/>
+      <WorkTogether />
     </>
   );
 }

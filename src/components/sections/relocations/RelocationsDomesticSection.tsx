@@ -1,0 +1,53 @@
+import Image from "next/image";
+import { Truck } from "lucide-react";
+import { domesticRelocationFeatures } from "@/data/relocations";
+
+export default function RelocationsDomesticSection() {
+  return (
+    <section className="bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] py-20 md:py-24">
+      <div className="container-page">
+        <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div>
+            <div className="inline-flex rounded-full border border-[#2F6DB3]/15 bg-[#2F6DB3]/5 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.28em] text-[#F47B20]">
+              Local & Domestic Moves
+            </div>
+
+            <h2 className="mt-5 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
+              Local expertise for moves of every size and complexity
+            </h2>
+
+            <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">
+              From high-rise buildings to limited-access locations, our local
+              relocation team creates practical moving plans, competitive
+              quotations, and safe handling strategies that fit your timeline,
+              property, and budget.
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {domesticRelocationFeatures.map((item) => (
+                <div
+                  key={item.title}
+                  className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm"
+                >
+                  <Truck className="mt-0.5 h-5 w-5 shrink-0 text-[#F47B20]" />
+                  <span className="text-sm leading-6 text-slate-700">
+                    {item.title}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative min-h-[420px] overflow-hidden rounded-[32px] bg-slate-100 shadow-[0_20px_50px_rgba(15,23,42,0.08)]">
+            <Image
+              src="/images/relocations/local-moving.webp"
+              alt="Domestic relocation by Transco Relocations"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
