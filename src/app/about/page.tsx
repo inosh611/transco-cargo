@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { CheckCircle2, ArrowRight, Globe2, ShieldCheck, Clock3 } from "lucide-react";
+import AboutMissionVisionSection from "@/components/sections/AboutMissionVisionSection";
+import WorkTogether from "@/components/sections/WorkTogether";
+
+import {
+  CheckCircle2,
+  ArrowRight,
+  Globe2,
+  ShieldCheck,
+  Clock3,
+} from "lucide-react";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -59,31 +68,55 @@ export default function AboutPage() {
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               TranscoCargo is a modern logistics company focused on reliable
-              cargo solutions, better customer experience, and strong operational
-              support for businesses and individuals.
+              cargo solutions, better customer experience, and strong
+              operational support for businesses and individuals.
             </p>
           </div>
         </div>
       </section>
 
       <section className="section-space bg-white">
-        <div className="container-page grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+        <div className="container-page grid gap-12 lg:items-center">
           <div>
             <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
               Who We Are
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              We help clients move cargo with greater confidence through
-              dependable freight forwarding, warehousing support, and tailored
-              logistics planning. Our goal is to combine modern service quality
-              with practical shipping expertise.
+            <p className="mt-6 text-lg leading-8 text-slate-600 text-justify">
+              Transco Cargo (Pvt) Ltd is the Sri Lankan counterpart of the
+              premier freight forwarding and turnkey logistics provider, Transco
+              Cargo Australia (Pty) Ltd, with headquarters in Melbourne,
+              Victoria. With a plethora of high-level logistics and shipping
+              solutions and services offered to clients, Transco Cargo has a
+              professional network of global agents to facilitate end-to-end
+              freight forwarding and logistics operations via air, sea and road
+              freight. Resilient to our motto, “We Love to Deliver”, our
+              experiences, resources and technologies have made us an efficient
+              and trustworthy logistics partner to our clients. Regardless of
+              the origin or destination of your freight, our total logistics
+              solutions are reliable and affordable to ensure safe and speedy
+              delivery from origin to destination.
             </p>
 
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              Whether the shipment is commercial, personal, urgent, or
-              specialized, we work to ensure smoother coordination, safer
-              handling, and better visibility from origin to destination.
+            <p className="mt-5 text-lg leading-8 text-slate-600 text-justify">
+              Our core logistics and shipping services include freight
+              forwarding via sea, air and land, as well as customs brokerage
+              services, haulage and warehousing solutions, as well as imports
+              and exports to/from Sri Lanka any global destination.
+            </p>
+          </div>
+        </div>
+        <div className="container-page grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="mt-6 text-lg leading-8 text-slate-600 text-justify">
+              With our network of overseas agents, Transco Cargo offers
+              importers and exporters to and from Sri Lanka, the most favourable
+              rates and routing options to benefit our clientele’s needs and
+              requirements. From the moment a shipment order has been placed
+              with Transco Cargo, we as your trusted freight forwarding partner,
+              will work diligently to fast track the processes and monitor the
+              progress from moving your cargo from suppliers to the final point
+              of delivery.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -95,23 +128,28 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-
           <div className="relative">
-            <div className="rounded-[2rem] bg-gradient-to-br from-[#2F6DB3] to-[#F47B20] p-1 shadow-2xl">
-              <div className="rounded-[1.8rem] bg-white p-8">
+            <div className="rounded-[0.5rem] bg-[#2F6DB3] p-0.5 shadow-1xl">
+              <div className="rounded-[0.5rem] bg-white p-8">
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-3xl bg-[#2F6DB3] p-6 text-white shadow-lg">
+                  <div className="rounded-1xl bg-[#2F6DB3] p-6 text-white shadow-sm">
                     <div className="text-sm text-white/80">Coverage</div>
-                    <div className="mt-2 text-3xl font-extrabold">120+ Destinations</div>
+                    <div className="mt-2 text-3xl font-extrabold">
+                      120+ Destinations
+                    </div>
                   </div>
 
-                  <div className="rounded-3xl bg-[#F47B20] p-6 text-white shadow-lg">
+                  <div className="rounded-1xl bg-[#F47B20] p-6 text-white shadow-lg">
                     <div className="text-sm text-white/80">Support</div>
-                    <div className="mt-2 text-3xl font-extrabold">24/7 Team</div>
+                    <div className="mt-2 text-3xl font-extrabold">
+                      24/7 Team
+                    </div>
                   </div>
 
                   <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:col-span-2">
-                    <div className="text-sm text-slate-500">Why clients choose us</div>
+                    <div className="text-sm text-slate-500">
+                      Why clients choose us
+                    </div>
                     <div className="mt-3 text-lg font-semibold text-slate-900">
                       Professional cargo handling, better communication, and a
                       modern logistics experience built on trust.
@@ -123,6 +161,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+    
+      <AboutMissionVisionSection /> 
 
       <section className="section-space bg-slate-50">
         <div className="container-page">
@@ -142,9 +182,9 @@ export default function AboutPage() {
               return (
                 <article
                   key={item.title}
-                  className="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                  className="rounded-[0.5rem] border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2F6DB3] to-[#F47B20] text-white shadow-lg">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2F6DB3] text-white shadow-sm">
                     <Icon size={28} />
                   </div>
 
@@ -152,7 +192,7 @@ export default function AboutPage() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 leading-7 text-slate-600">
+                  <p className="mt-3 leading-7 text-slate-600 text-justify">
                     {item.description}
                   </p>
                 </article>
@@ -161,46 +201,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <section className="section-space bg-white">
-        <div className="container-page">
-          <div className="rounded-[2rem] bg-gradient-to-r from-[#2F6DB3] to-[#1f4f84] p-8 text-white shadow-2xl lg:p-12">
-            <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-              <div>
-                <div className="text-sm font-bold uppercase tracking-[0.25em] text-orange-200">
-                  Let’s Work Together
-                </div>
-
-                <h2 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">
-                  Need a Reliable Logistics Partner?
-                </h2>
-
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-blue-100">
-                  Talk to our team about your cargo requirements and discover a
-                  smarter logistics experience built around your needs.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-4 lg:justify-end">
-                <Link
-                  href="/quote"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#F47B20] px-6 py-3.5 font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#de6f1d]"
-                >
-                  Request Quote
-                  <ArrowRight size={16} />
-                </Link>
-
-                <Link
-                  href="/contact"
-                  className="rounded-full border border-white/30 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <WorkTogether/>
     </>
   );
 }

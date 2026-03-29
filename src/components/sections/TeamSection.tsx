@@ -5,22 +5,22 @@ const teamMembers = [
   {
     name: "Michael Perera",
     role: "Managing Director",
-    image: "/team/member-1.jpg",
+    image: "/images/user-place-holder.webp",
   },
   {
     name: "Sarah Fernando",
     role: "Operations Manager",
-    image: "/team/member-2.jpg",
+    image: "/images/user-place-holder.webp",
   },
   {
     name: "Daniel Silva",
     role: "Freight Specialist",
-    image: "/team/member-3.jpg",
+    image: "/images/user-place-holder.webp",
   },
   {
     name: "Nadeesha Kumar",
     role: "Customer Support Lead",
-    image: "/team/member-4.jpg",
+    image: "/images/user-place-holder.webp",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function TeamSection() {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover transition duration-500 group-hover:scale-110"
+                  className="object-cover transition duration-500 group-hover:scale-100"
                 />
 
                 {/* overlay */}
