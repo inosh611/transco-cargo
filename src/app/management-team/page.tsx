@@ -23,23 +23,9 @@ export const metadata = createMetadata({
 });
 
 const teamMembers: TeamMember[] = [
+ 
   {
     id: "1",
-    name: "Mr. Mohan. A. J. Perera",
-    role: "Chairman – Non-Executive, Non-Independent Director",
-    image: "/images/team/mohan-perera.webp",
-    imageAlt: "Mr. Mohan. A. J. Perera",
-    profileUrl: "/team/ava-thompson",
-    paragraphs: [
-      "With four decades of experience in various fields of transport, freight forwarding and logistics, Mohan is a well-seasoned Business Executive.",
-      "Mohan began his career with the Aitken Spence Group that was to take him to the top. When he left the Aitken Spence Group on March 2009 to become the CEO of a global shipping company in Australia, he was the Vice President/ COO of Aitken Spence Cargo (Pvt) Ltd, and Country General Manager for TNT Express Worldwide, Sri Lanka and Maldives.",
-      "In April 2009, he assumed duties as the CEO of Transco International (Aust) Pty Ltd, a premier logistics services provider based in Melbourne, Australia. As the Director/CEO, he provides direction and leadership towards the achievement of the organisation’s philosophy, mission, strategy, and its annual goals and objectives.",
-      "His wealth of experience in the global logistics industry provides TCL with necessary direction and guidance in developing the business within a short period of time from incorporation. Mohan’s role as the Chairman of the Company is a key strength in achieving the vision of becoming a leading player in the industry.",
-      "Mohan is a Member of the Chartered Institute of Marketing (CIM-UK) and of the Chartered Institute of Logistics and Transport, UK, and is an Associate Fellow of the Australian Institute of Management",
-    ],
-  },
-  {
-    id: "2",
     name: "Dr. W. M. M. Charitha Mario Perera",
     role: "Joint Managing Director – Executive, Non-Independent Director",
     image: "/images/team/mario-perera.webp",
@@ -52,7 +38,7 @@ const teamMembers: TeamMember[] = [
     ],
   },
   {
-    id: "3",
+    id: "2",
     name: "Mr. M. Shanaka Iroshan Dias",
     role: "Joint Managing Director – Executive, Non-Independent Director",
     image: "/images/team/iroshan.webp",
@@ -64,33 +50,7 @@ const teamMembers: TeamMember[] = [
       "He excelled in developing business through global networks as well as local cooperate clientele which has been a key factor for TCL’s success.",
     ],
   },
-  {
-    id: "4",
-    name: "Mr. M. Z. M. Azreen",
-    role: "Non-Executive Independent Director",
-    image: "/images/team/azreen.webp",
-    imageAlt: "Mr. M. Z. M. Azreen",
-    profileUrl: "/team/sophia-nguyen",
-    paragraphs: [
-      "Azreen possesses over 30 years of extensive experience in the fields of Banking, Investment and Accounting in leading multinational organizations. Starting his career in Audit & Assurance services at KPMG Sri Lanka and moved to Ernst & Young Bahrain back in 1996, Azreen then moved to financial services sector.",
-      "He has held several positions at Kuwait Finance House (KFH), a pioneer of Islamic and Sharia compliant banking started in Kuwait. He has held positions of Head of Investments and Head of FI Credit during his tenure. He has also served as a non-independent director at KFH Asset Management, KFH Labuan, KFH Ijarah House which are group companies of KFH. He was also a non-executive director at Kuwait Finance House (Malaysia) and was a member of Board sub-committees. Azreen was an Independent Director of Spilburg Holdings (Pvt) Ltd.",
-      "He is currently an Independent Director of Kuwait Finance House (Malaysia) and acts as the Chairman of the Board Audit Committee and Nomination and Remuneration Committee as well as a Member of Board Risk Management and Credit Committees.",
-      "Azreen is a Fellow Member of the Institute of Chartered Accountants of Sri Lanka, Fellow Member of the Institute of Certified Management Accountants, Associate (ICMA) of Sri Lanka, Member of the Chartered Institute of Management Accountants (UK) and a Chartered Risk Analyst awarded by the American Academy of Financial Management.",
-    ],
-  },
-  {
-    id: "5",
-    name: "Mrs. Sweena Chang",
-    role: "Non-Executive Independent Director",
-    image: "/images/team/chang.webp",
-    imageAlt: "Mrs. Sweena Chang",
-    profileUrl: "/team/sophia-nguyen",
-    paragraphs: [
-      "Sweena is a well experienced personality in the HR and Legal Fields with over 28 years of working experience in a wide spectrum of HR and Legal functions. To complement her experience working in corporate management, Sweena is also accomplished as a HR and Legal consultant for both local and foreign clients.",
-      "Sweena has served at Aitken Spence PLC for 18 years handling Legal/Personnel Management – HR functions. She was the Head of the Legal division in the capacity of General Manager for 9 years. She has handled all HR functions including training programs, dispute resolution, dealing with trade unions, labour department related activities etc. From a legal aspect, Sweena was involved in drafting/reviewing contracts and corporate documents as well as court work and appearing for cases in courts. From 2012 onwards, Sweena has decided to pursue her own career as a Legal/HR Consultant and a Company Secretary with a wide client base of Companies including foreign Companies, NGOs and Banks.",
-      "Sweena is an Attorney-at-Law and holds a Master of Business Administration in HRM from the Faculty of Management & Finance – University of Colombo. She has also followed a programme on Organizational Growth and Strategic HRM at the Indian Institute of Management-Bangalore.",
-    ],
-  },
+
 ];
 
 export default function Page() {
