@@ -1,6 +1,4 @@
-import MeetOurTeam, {
-  type TeamMember,
-} from "@/components/sections/MeetOurTeam";
+import MeetOurTeam, { type TeamMember, } from "@/components/sections/MeetOurTeam";
 import { createMetadata } from "@/lib/seo";
 import WorkTogether from "@/components/sections/WorkTogether";
 import Image from "next/image";
@@ -23,25 +21,11 @@ export const metadata = createMetadata({
 });
 
 const teamMembers: TeamMember[] = [
- 
-  {
+   {
     id: "1",
-    name: "Dr. W. M. M. Charitha Mario Perera",
-    role: "Joint Managing Director – Executive, Non-Independent Director",
-    image: "/images/team/mario-perera.webp",
-    imageAlt: "Dr. W. M. M. Charitha Mario Perera",
-    profileUrl: "/team/ethan-carter",
-    paragraphs: [
-      "Charitha, is a skillful entrepreneur who has thrived in logistics industry from a young age. He joined the Transco Cargo group in Australia at the age of 19, and rapidly rose through the ranks to General Manager. He is specialized in many aspects of logistics related functions with a sound knowledge and understanding on global operations. His sound marketing and sales strategies together with customer handling capabilities have resulted in developing a solid client base for not only Transco Cargo but also amongst it’s other subsidiary & associate companies.",
-      "Charitha was instrumental in founding TCL in 2021 with the view to offer world class logistics services in Sri Lanka. Since then, Charitha has dedicated his time and efforts to develop the business in Sri Lanka together with a team of professionals and his wealth of experience in global markets is already yielding dividends. At present he holds several directorships in companies operating in the fields of Logistics, Travel & Tourism, Airline Ticketing, Digital Marketing, Education, Real Estate.",
-      "He holds a Doctorate in Business Administration (DBA) specializing in Marketing from LIGS University-USA and Master of Business Administration (MBA) specializing in Finance from Australian Institute of Business. In addition, he holds a Diploma of Business from Edith Cowan University and Certificate in Management Accounting from The Chartered Institute of Management Accountants.",
-    ],
-  },
-  {
-    id: "2",
     name: "Mr. M. Shanaka Iroshan Dias",
     role: "Joint Managing Director – Executive, Non-Independent Director",
-    image: "/images/team/iroshan.webp",
+    image: "/images/team/shanaka-dias.webp",
     imageAlt: "Mr. M. Shanaka Iroshan Dias",
     profileUrl: "/team/sophia-nguyen",
     paragraphs: [
@@ -50,6 +34,19 @@ const teamMembers: TeamMember[] = [
       "He excelled in developing business through global networks as well as local cooperate clientele which has been a key factor for TCL’s success.",
     ],
   },
+  {
+    id: "2",
+    name: "Dr. W. M. M. Charitha Mario Perera",
+    role: "Joint Managing Director – Executive, Non-Independent Director",
+    image: "/images/team/dr-charitha-perera.webp",
+    imageAlt: "Dr. W. M. M. Charitha Mario Perera",
+    profileUrl: "/team/ethan-carter",
+    paragraphs: [
+      "Charitha, is a skillful entrepreneur who has thrived in logistics industry from a young age. He joined the Transco Cargo group in Australia at the age of 19, and rapidly rose through the ranks to General Manager. He is specialized in many aspects of logistics related functions with a sound knowledge and understanding on global operations. His sound marketing and sales strategies together with customer handling capabilities have resulted in developing a solid client base for not only Transco Cargo but also amongst it’s other subsidiary & associate companies.",
+      "Dr. Charitha Perera, a visionary entrepreneur, was instrumental in founding TCL in 2021 with the goal of bringing world-class logistics services to Sri Lanka. Leveraging a wealth of global market experience and a commitment to professional excellence, he has successfully expanded his leadership to hold several directorships across diverse sectors, including Travel, Digital Marketing, and Real Estate. His strategic leadership is backed by an impressive academic foundation, including a Doctorate in Business Administration (DBA) in Marketing from LIGS University and an MBA in Finance from the Australian Institute of Business, alongside specialized certifications in Business and Management Accounting.",
+    ],
+  },
+ 
 
 ];
 
@@ -92,6 +89,7 @@ export default function Page() {
         </div>
       </section>
       <MeetOurTeam members={teamMembers} organizationName="TranscoCargo" />;
+      
       {/* CTA */}
       <WorkTogether />
     </>
