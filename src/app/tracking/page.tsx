@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import BrandMarquee from "@/components/sections/BrandMarquee";
 import { createMetadata } from "@/lib/seo";
+import WorkTogether from "@/components/sections/WorkTogether";
 import {
   Search,
   PackageCheck,
@@ -107,7 +108,7 @@ export default function TrackingPage() {
                 </div>
               </div>
             </section>
-
+      <BrandMarquee/>
       <section className="section-space bg-white">
         <div className="container-page grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
@@ -272,6 +273,7 @@ export default function TrackingPage() {
             </p>
           </div>
         </div>
+        <WorkTogether/>
       </section>
     </>
   );
