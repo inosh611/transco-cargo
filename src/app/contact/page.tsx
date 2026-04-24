@@ -294,6 +294,7 @@ import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowRight, Building2 } from "lucide-react";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import WorkTogether from "@/components/sections/WorkTogether";
 
 // --- Animation Variants ---
 const fadeInUp: Variants = {
@@ -527,6 +528,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+       <WorkTogether />
     </main>
+    
   );
 }

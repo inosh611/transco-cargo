@@ -127,7 +127,7 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,123,32,0.2),transparent_30%)]" />
         </motion.div>
 
-        <div className="relative z-10 container-page py-28 md:py-36 lg:py-44">
+        <div className="relative z-10 container-page py-28 md:py-36 lg:py-44" style={{ marginLeft: "15%" }}>
           <motion.div 
             initial="hidden"
             animate="visible"

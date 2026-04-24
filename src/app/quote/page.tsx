@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import WorkTogether from "@/components/sections/WorkTogether";
 // --- Animation Variants ---
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -311,6 +312,7 @@ export default function QuotePage() {
           </motion.div>
         </div>
       </section>
+       <WorkTogether />
     </main>
   );
 }

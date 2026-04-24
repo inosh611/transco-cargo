@@ -86,7 +86,6 @@ export default function RelocationsHero() {
       ref={containerRef}
       className="relative min-h-[85vh] overflow-hidden bg-slate-950 flex items-center"
     >
-      {/* BACKGROUND IMAGE - ස්ක්‍රෝල් එකට සහ එන්ට්‍රන්ස් එකට සූම් වෙනවා */}
       <motion.div 
         style={{ y }}
         initial={{ scale: 1.1, opacity: 0 }}
@@ -107,12 +106,12 @@ export default function RelocationsHero() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,123,32,0.2),transparent_35%)]" />
       </motion.div>
 
-      <div className="relative z-10 container-page py-28 md:py-36 lg:py-44">
+      <div className="relative z-10 container-page py-28 md:py-36 lg:py-44" style={{ marginLeft: "15%" }}>
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          style={{ opacity }} // ස්ක්‍රෝල් කරන විට අකුරු හෙමින් ෆේඩ් අවුට් වෙනවා
+          style={{ opacity }} 
           className="max-w-4xl"
         >
           {/* Badge */}
@@ -155,7 +154,6 @@ export default function RelocationsHero() {
         </motion.div>
       </div>
 
-      {/* පහළට යාමට සලකුණක් (Scroll Indicator) */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
