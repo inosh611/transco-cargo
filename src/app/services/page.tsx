@@ -175,8 +175,6 @@ export default function ServicesPage() {
       </section>
 
       {/* --- SERVICES GRID --- */}
-      {/* සටහන: ServicesSection එක ඇතුළත වෙනම Animations තිබිය හැක, 
-          එසේ නොමැති නම් මෙහිදී motion.div එකකින් wrap කළ හැක. */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
