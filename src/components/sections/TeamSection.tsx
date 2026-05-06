@@ -10,9 +10,9 @@ const teamMembers = [
   { name: "Dr. Charitha Perera", role: "Group CEO", image: "/images/team/dr-charitha-perera.webp" },
   { name: "Swairee Rathnasiri", role: "Head of HR", image: "/images/team/swairee-rathnasiri.webp" },
   { name: "Shiran Chathuranga", role: "Senior Accountant", image: "/images/team/shiran-chathuranga.webp" },
-  { name: "Shanel Suraweera", role: "Asst General Manager – Import Cluster", image: "/images/team/shanel-suraweera.webp" },
-  { name: "Shan Perera", role: "Operations Manager", image: "/images/team/shan-perera.webp" },
+  // { name: "Shanel Suraweera", role: "Asst General Manager – Import Cluster", image: "/images/team/shanel-suraweera.webp" },
   { name: "Dilshan Jayawardena", role: "Senior Manager – Customer Service", image: "/images/team/dilshan-jayawardena.webp" },
+  { name: "Shan Perera", role: "Operations Manager", image: "/images/team/shan-perera.webp" },
   { name: "Nisalka Perera", role: "Manager – Sales & Business Development", image: "/images/team/nisalka-perera.webp" },
 ];
 

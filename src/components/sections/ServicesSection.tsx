@@ -228,8 +228,8 @@ const offerServices = [
 
 const valueAddedServices = [
   { title: "Commercial Cargo", slug: "commercial-cargo", icon: BriefcaseBusiness },
-  { title: "Personal Effects", slug: "personal-effects", icon: Truck },
-  { title: "Consolidation", slug: "consolidation", icon: Network },
+  // { title: "Personal Effects", slug: "personal-effects", icon: Truck },
+  // { title: "Consolidation", slug: "consolidation", icon: Network },
   { title: "Projects", slug: "projects", icon: FolderKanban },
   { title: "Express Courier", slug: "express-courier", icon: Package },
 ];
@@ -312,7 +312,7 @@ export default function ServicesSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-3xl text-center"
+            className="mx-auto max-w-3xl text-center justify-center"
           >
             <div className="text-sm font-bold uppercase tracking-[0.25em] text-white/80">
               Value Added Services

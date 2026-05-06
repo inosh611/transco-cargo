@@ -20,7 +20,7 @@ export const siteConfig = {
   { label: "Services", href: "/services" },
   { label: "Team", href: "/management-team" },
   // { label: "Destinations", href: "/destinations" },
-  { label: "Personal Effects", href: "/personal-effects" },
+  // { label: "Personal Effects", href: "/personal-effects" },
   { label: "Tracking", href: "/tracking" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },

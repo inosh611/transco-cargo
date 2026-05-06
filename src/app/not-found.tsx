@@ -93,8 +93,7 @@ export default function NotFound() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-xl text-lg font-medium leading-relaxed text-slate-500">
-            The page you are looking for might have been relocated or is temporarily unavailable. 
-            Don't worry, your journey doesn't end here.
+            The page you are looking for might have been relocated or is temporarily unavailable. Dont worry, your journey doesnt end here.
           </p>
         </motion.div>
 

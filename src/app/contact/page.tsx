@@ -334,16 +334,16 @@ const offices = [
     email: "info@transcocargo.com.au",
     mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.0326!2d144.9535!3d-37.6635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDM5JzQ4LjYiUyAxNDTCsDU3JzEyLjYiRQ!5e0!3m2!1sen!2sau!4v123456789",
   },
-  {
-    title: "Dandenong South Office / Warehouse",
-    addressLine1: "206-208 Discovery Road",
-    addressLine2: "Dandenong South VIC 3175",
-    country: "Australia",
-    phone: "+61 3 9703 2255",
-    fax: "+61 3 9790 0677",
-    email: "info@transcocargo.com.au",
-    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.5!2d145.2!3d-38.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzhCsDAwJzAwLjAiUyAxNDXCsDEyJzAwLjAiRQ!5e0!3m2!1sen!2sau!4v123456789",
-  },
+  // {
+  //   title: "Dandenong South Office / Warehouse",
+  //   addressLine1: "206-208 Discovery Road",
+  //   addressLine2: "Dandenong South VIC 3175",
+  //   country: "Australia",
+  //   phone: "+61 3 9703 2255",
+  //   fax: "+61 3 9790 0677",
+  //   email: "info@transcocargo.com.au",
+  //   mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.5!2d145.2!3d-38.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzhCsDAwJzAwLjAiUyAxNDXCsDEyJzAwLjAiRQ!5e0!3m2!1sen!2sau!4v123456789",
+  // },
 ];
 
 export default function ContactPage() {
@@ -410,9 +410,9 @@ export default function ContactPage() {
 
             <motion.div variants={staggerContainer} className="mt-12 space-y-8">
               {[
-                { icon: <Mail />, color: "bg-[#2F6DB3]", label: "Email", value: "info@transcocargo.com.au" },
-                { icon: <Phone />, color: "bg-[#F47B20]", label: "Phone", value: "+61 3 9703 2255" },
-                { icon: <MapPin />, color: "bg-slate-900", label: "Main Location", value: "Melbourne, Australia" }
+                { icon: <Mail />, color: "bg-[#2F6DB3]", label: "Email", value: "info@transcocargo.lk" },
+                { icon: <Phone />, color: "bg-[#F47B20]", label: "Phone", value: "+94 112 887 808" },
+                { icon: <MapPin />, color: "bg-slate-900", label: "Main Location", value: "2nd Floor, No.162 Nawala Road, Nugegoda, Sri Lanka" }
               ].map((item, i) => (
                 <motion.div variants={fadeInUp} key={i} className="flex items-center gap-5">
                   <div className={`rounded-2xl ${item.color} p-4 text-white shadow-lg`}>
