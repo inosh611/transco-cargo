@@ -327,7 +327,7 @@ export default function ServicesSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5"
+            className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
           >
             {valueAddedServices.map((service) => {
               const Icon = service.icon;
