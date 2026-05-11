@@ -6,9 +6,9 @@ export const siteConfig = {
     "Professional cargo, freight forwarding, warehousing, and logistics solutions for commercial and personal shipping needs.",
   url: "https://www.transcocargo.com",
   ogImage: "/og/og-home.jpg",
-  email: "info@transcocargo.com",
-  phone: "+61 3 9703 2255",
-  address: "Melbourne, Australia",
+  email: "info@transcocargo.lk",
+  phone: "+94 112 887 808",
+  address: "2nd floor no, 162 Nawala Rd, Sri Jayawardenepura Kotte 11222",
   links: {
     facebook: "#",
     linkedin: "#",

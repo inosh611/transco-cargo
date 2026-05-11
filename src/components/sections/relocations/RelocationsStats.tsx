@@ -156,7 +156,7 @@ export default function RelocationsStats() {
   };
 
   return (
-    <section className="relative z-30 -mt-20 px-6">
+   <section className="relative z-30 px-6" style={{ marginTop: '-22px' }}>
       <div className="container-page mx-auto max-w-6xl">
 
         {/* ── Gradient border wrapper ── */}

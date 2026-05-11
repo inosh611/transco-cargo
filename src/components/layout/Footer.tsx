@@ -63,7 +63,9 @@ export default function Footer() {
           <div className="mt-4 space-y-3 text-slate-400">
             <p>{siteConfig.email}</p>
             <p>{siteConfig.phone}</p>
-            <p>{siteConfig.address}</p>
+            <p>2nd floor no, 162 Nawala Rd,</p>
+            <p>Nugegoda</p>
+            <p>Sri Lanka</p>
           </div>
         </div>
       </div>

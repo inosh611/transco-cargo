@@ -57,7 +57,7 @@ export default function Page() {
       <section className="relative overflow-hidden bg-slate-950">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/team-management.webp"
+            src="/images/hero/team-management.jpeg"
             alt="TranscoCargo Team"
             fill
             priority

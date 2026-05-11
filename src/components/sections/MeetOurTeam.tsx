@@ -175,7 +175,7 @@ const teamMembers = [
   { name: "Amila Wijesekara", role: "Assistant Accountant", image: "/images/team/amila-wijesekara.webp" },
   { name: "Chanuri Amarasinghe", role: "Asst Manager – Customer Service", image: "/images/team/chanuri-amarasinghe.webp" },
   { name: "Methani Senarath", role: "Asst Manager – Sales & Customer Service", image: "/images/team/methani-senarath.webp" },
-  { name: "Madhushani", role: "Asst Manager – Customer Service", image: "/images/team/madhushani.webp" },
+  { name: "Madhushani Wijerathna", role: "Asst Manager – Customer Service", image: "/images/team/madhushani.webp" },
 ];
 
 const containerVariants: Variants = {

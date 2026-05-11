@@ -572,9 +572,9 @@ const imageScale: Variants = {
 
 const offices = [
   {
-    title: "Sri Lanka Office / Warehouse",
+    title: "Sri Lanka Office",
     addressLine1: "2nd floor no, 162 Nawala Rd",
-    addressLine2: "Sri Jayawardenepura Kotte 11222",
+    addressLine2: "Nugegoda",
     country: "Sri Lanka",
     phone: "+94 112 887 808",
     email: "info@transcocargo.lk",
